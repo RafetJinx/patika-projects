@@ -1,0 +1,20 @@
+İstenilen:
+	Proje 2
+	[16,21,11,8,12,22] -> Merge Sort
+
+	Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+	Big-O gösterimini yazınız.
+	
+Cevap:
+	Adım 1: Diziyi ikiye bölerek alt dizilere ayırma:
+	[16, 21, 11] ve [8, 12, 22]
+
+	Adım 2: Alt dizileri aynı şekilde sıralama işlemini uygulama:
+	[16, 11, 21] ve [8, 12, 22]
+
+	Adım 3: Alt dizileri birleştirme ve sıralama:
+	[11, 16, 21] ve [8, 12, 22] alt dizileri birleştirilir ve sıralanır.
+
+	Sonuç: [8, 11, 12, 16, 21, 22] olarak sıralanır.
+	
+	Merge Sort'un Big-O gösterimi O(nlogn)'dir.
