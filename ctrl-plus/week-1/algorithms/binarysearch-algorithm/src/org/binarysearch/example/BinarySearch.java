@@ -1,6 +1,13 @@
 package org.binarysearch.example;
 
 public class BinarySearch {
+	/**
+     	* Performs iterative binary search on a sorted array to find a specific value.
+     	*
+     	* @param array      the sorted array to be searched
+     	* @param valueSought the value to be searched for
+     	* @return true if the value is found, false otherwise
+     	*/
 	public static boolean binarySearchIterative(int[] array, int valueSought) {
 		int left = 0;
 		int right = array.length - 1;
@@ -21,6 +28,13 @@ public class BinarySearch {
 		return false;
 	}
 
+	/**
+     	* Performs recursive binary search on a sorted array to find a specific value.
+     	*
+     	* @param array      the sorted array to be searched
+     	* @param valueSought the value to be searched for
+     	* @return true if the value is found, false otherwise
+     	*/
 	public static boolean binarySearchRecursive(int[] array, int valueSought) {
 		int left = 0;
 		int right = array.length - 1;
@@ -30,6 +44,15 @@ public class BinarySearch {
 		return result;
 	}
 
+	/**
+     	* Recursive helper function for binary search.
+     	*
+     	* @param array      the sorted array to be searched
+     	* @param valueSought the value to be searched for
+     	* @param left       the left index of the search range
+     	* @param right      the right index of the search range
+     	* @return true if the value is found, false otherwise
+     	*/
 	public static boolean binarySearchRecursive(int[] array, int valueSought, int left, int right) {
 		if (left > right)
 			return false;
